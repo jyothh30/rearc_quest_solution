@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 FOLDER_NAME = 'bls_data'
-S3_BUCKET_NAME = os.getenv('TABLE_NAME')
+S3_BUCKET_NAME = 'mysources3bucket-rzox97pp'
 DATA_SOURCE = "https://download.bls.gov/pub/time.series/pr/"
 HEADERS = {
     'User-Agent': '+19206268696',
