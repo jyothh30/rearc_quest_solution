@@ -1,7 +1,7 @@
 import boto3
 import requests
 
-S3_BUCKET_NAME = "zombalifeiscool"
+S3_BUCKET_NAME = "mysources3bucket-rzox97pp"
 DATA_SOURCE = "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
 S3_FOLDER = "api"  
 
