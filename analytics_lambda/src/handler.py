@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     arn_parts = S3_BUCKET_NAME.split(':')[-1]
     bucket_resource = s3.Bucket(arn_parts)
 
-    url='https://datausa.io/api/data?drilldowns=Nation&measures=Population'
+    url=f'https://{bucket_resource}.s3.amazonaws.com/api/population.json'
 
     response=requests.get(url)
     resp = response.json()
